@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,900;1,400&display=swap');
+
+
+.btn {
+    cursor: pointer;
+    border: none;
+    transition: ease 400ms;
+
+    &:hover {
+        transition: ease 400ms;
+        background-color: rgb(247, 136, 182);
+        color: snow;
+    }
+}
+
+body {
+    margin: 0 ;
+    header {
+        background: url("/image/hede_bg.png") no-repeat;
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+    }
+
+    font-family: 'Lato',
+    sans-serif;
+
+    .nav--menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.808);
+        display: inline-block;
+        font-size: 78px;
+        font-style: italic;
+        margin: 0 0px 50px 550px;
+    }
+
+    .nav--domsilka {
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px .2px black, 0 0 1em rgb(255, 255, 255);
+            transition: ease 200ms;
+            &:hover{
+                transition: ease 200ms;
+                color: thistle;
+            }
+        }
+
+        margin: 2rem 6rem 0 0;
+        max-height: 1.5rem;
+    }
+
+    .nav--silka {
+        margin: 0 .9rem;
+        font-size: 1rem;
+    }
+
+    .img--icon {
+        position: relative;
+        bottom: -40px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+        .intro {
+            margin-left: 64px;
+
+            h1 {
+                color: white;
+                margin-bottom: 0;
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            p {
+                color: white;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                font-weight: 100;
+                font-size: 2.9rem;
+            }
+        }
+
+        .btn {
+            background-color: rgb(28, 70, 0);
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            border: solid 1px;
+            border-color: rgb(20, 39, 0);
+            padding: .3rem 1rem;
+            transition: ease 500ms;
+            // max-width: 100px;
+            &:hover{
+                transition: ease 200ms;
+                border-color: lawngreen;
+            }
+        }
+    }
+}
