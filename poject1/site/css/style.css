@@ -13,10 +13,17 @@
 }
 
 body {
+  background-color: snow;
   margin: 0;
+  min-height: 2000px;
   font-family: "Lato", sans-serif;
 }
 body header {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: url("../image/hede_bg.png") no-repeat;
   background-size: 100%;
 }
@@ -87,7 +94,7 @@ body .img--icon .btn {
   color: white;
   font-weight: 500;
   border: solid 1px;
-  border-color: #142700;
+  border-color: rgba(20, 39, 0, 0);
   padding: 0.3rem 1rem;
   -webkit-transition: ease 500ms;
   transition: ease 500ms;
@@ -96,4 +103,64 @@ body .img--icon .btn:hover {
   -webkit-transition: ease 200ms;
   transition: ease 200ms;
   border-color: lawngreen;
+  color: #cfc3c3;
+}
+body container .sixgrad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 5rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body container .sixgrad .active {
+  padding: 0.5rem 2rem 0 2rem;
+  border-radius: 1rem 1rem 0 0;
+  border-top: 1px solid #777777;
+  border-left: 1px solid #777777;
+  border-right: 1px solid #777777;
+}
+body container .sixgrad figcaption {
+  font-weight: 400;
+  -webkit-transition: ease 400ms;
+  transition: ease 400ms;
+}
+body container .sixgrad figcaption:hover {
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+}
+body container .sixgrad p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #474747;
+}
+body container .boeder1 {
+  border: 1px solid;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  border-radius: 1rem;
+}
+body container .ipad-info {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body container .ipad-info h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+body container .ipad-info p {
+  padding: 0 2px 2rem 2px;
+  max-width: 900px;
 }
