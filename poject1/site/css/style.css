@@ -1,4 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .btn {
   cursor: pointer;
   border: none;
@@ -13,9 +85,9 @@
 }
 
 body {
-  background-color: snow;
+  background-color: #e0e0e0;
   margin: 0;
-  min-height: 2000px;
+  min-height: 2500px;
   font-family: "Lato", sans-serif;
 }
 body header {
@@ -105,7 +177,39 @@ body .img--icon .btn:hover {
   border-color: lawngreen;
   color: #cfc3c3;
 }
-body container .sixgrad {
+body .container2 {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .container2 .fa-check-circle {
+  color: #ff662e;
+}
+body .container2 h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+body .container2 li {
+  font-size: 1.5rem;
+  list-style: none;
+  line-height: 2rem;
+}
+body .container2 li i {
+  margin-right: 0.5rem;
+}
+body .container1 .sixgrad {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,35 +223,36 @@ body container .sixgrad {
   -ms-user-select: none;
   user-select: none;
 }
-body container .sixgrad .active {
+body .container1 .sixgrad .active {
   padding: 0.5rem 2rem 0 2rem;
-  border-radius: 1rem 1rem 0 0;
-  border-top: 1px solid #777777;
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.46);
 }
-body container .sixgrad figcaption {
+body .container1 .sixgrad figcaption {
   font-weight: 400;
   -webkit-transition: ease 400ms;
   transition: ease 400ms;
 }
-body container .sixgrad figcaption:hover {
+body .container1 .sixgrad figcaption:hover {
   -webkit-transition: ease 300ms;
   transition: ease 300ms;
   text-shadow: 0 0 1px #333, 0 0 1px #333;
 }
-body container .sixgrad p {
+body .container1 .sixgrad p {
+  padding-bottom: 1rem;
   font-size: 1.5rem;
   text-align: center;
   color: #474747;
 }
-body container .boeder1 {
-  border: 1px solid;
+body .container1 .boeder1 {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.46);
   margin-left: 12rem;
   margin-right: 12rem;
   border-radius: 1rem;
+  z-index: 1;
 }
-body container .ipad-info {
+body .container1 .ipad-info {
   padding-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,11 +261,59 @@ body container .ipad-info {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body container .ipad-info h1 {
+body .container1 .ipad-info h1 {
   font-size: 2rem;
   font-weight: 400;
 }
-body container .ipad-info p {
-  padding: 0 2px 2rem 2px;
-  max-width: 900px;
+body .container1 .ipad-info p {
+  padding: 0 2px 3rem 2px;
+  max-width: 800px;
+}
+
+.contactcentr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contactcentr .h1nm {
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #008cff;
+}
+.contactcentr .h1nm h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+}
+.contactcentr .load_me2 {
+  margin-top: 2rem;
+  max-width: 330px;
+  border-radius: 0.3rem;
+}
+.contactcentr .load_me {
+  padding-top: 0.5rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ff9100;
+  border-radius: 0.3rem;
+}
+.contactcentr .load_me h1 {
+  font-weight: 400;
+  text-shadow: 0 0 1px #333, 0 0 1px #333;
+}
+.contactcentr .load_me .inputss {
+  padding-top: 1.1rem;
+  padding-bottom: 0.8rem;
 }
